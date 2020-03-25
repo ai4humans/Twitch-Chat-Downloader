@@ -28,7 +28,7 @@ setup(
     entry_points=
     '''
         [console_scripts]
-        tcd=tcd:main
+        tcde=tcde:main
     ''',
     description='Twitch Chat Downloader',
     install_requires=requirements,
@@ -37,13 +37,13 @@ setup(
     long_description_content_type='text/markdown',
     include_package_data=True,
     keywords='Twitch',
-    name='tcd',
+    name='tcde',
     packages=find_packages(),
     python_requires=">=3.7",
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,
-    url='https://github.com/PetterKraabol/Twitch-Chat-Downloader',
+    url='https://github.com/ai4humans/Twitch-Chat-Downloader/',
     version='3.1.3',
     zip_safe=True,
 )
