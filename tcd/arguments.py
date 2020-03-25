@@ -23,6 +23,7 @@ class Arguments(metaclass=Singleton):
         USER: str = 'user'
         INCLUDES: str = 'includes'
         FIRST: str = 'first'
+        EXACT: str = 'exact'
         VIDEO: str = 'video'
         FORMAT: str = 'format'
         TIMEZONE: str = 'timezone'
@@ -55,6 +56,7 @@ class Arguments(metaclass=Singleton):
         # Optional or prompted arguments
         self.client_id: Optional[str] = arguments[Arguments.Name.CLIENT_ID]
         self.first: Optional[int] = arguments[Arguments.Name.FIRST]
+        self.exact: Optional[int] = arguments[Arguments.Name.EXACT]
         self.timezone: Optional[str] = arguments[Arguments.Name.TIMEZONE]
         self.includes: Optional[str] = arguments[Arguments.Name.INCLUDES]
 
