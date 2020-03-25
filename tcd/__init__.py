@@ -19,7 +19,7 @@ def main():
     parser.add_argument('-v', f'--{Arguments.Name.VIDEO}', type=str, help='Video IDs separated by commas')
     parser.add_argument('-c', f'--{Arguments.Name.CHANNEL}', type=str, help='Channel names separated by commas')
     parser.add_argument('-u', f'--{Arguments.Name.USER}', type=str, help='Messages from users, separated by commas')
-    parser.add_argument(f'--{Arguments.Name.FIRST}', type=int, default=5, help='Download chat from the last n VODs')
+    parser.add_argument(f'--{Arguments.Name.EXACT}', type=int, default=1, help='Download chat from the last exact VOD')
     parser.add_argument(f'--{Arguments.Name.CLIENT_ID.replace("_", "-")}', type=str, help='Twitch client ID')
     parser.add_argument(f'--{Arguments.Name.VERBOSE}', action='store_true', help='Verbose output')
     parser.add_argument('-q', f'--{Arguments.Name.QUIET}', action='store_true')
