@@ -188,7 +188,7 @@ class Downloader:
         :param channels: List of channel names
         :return: None
         """
-        for channel, videos in self.helix_api.users(channels).videos(first=Arguments().first):
+        for channel, videos in self.helix_api.users(channels).videos(exact=Arguments().exact):
             Logger().log(format('\n{}'.format(channel.display_name)), Log.REGULAR)
             for video in videos:
                 Logger().log(format('\n{}'.format(video.title)), Log.REGULAR)
